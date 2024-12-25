@@ -1,7 +1,6 @@
 #include "sofle.dtsi" // The shared dtsi file is included in the overlay
 
 /{
-    model="sofle";
     // Label of the kscan node in the dtsi
     &kscan0 {
         col-gpios

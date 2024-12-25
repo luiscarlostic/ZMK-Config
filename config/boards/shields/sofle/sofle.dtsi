@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h> 
 
 / {
+    model="sofle";
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -32,6 +33,7 @@
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
+    
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
