@@ -28,7 +28,7 @@
             ;
 
     };
-
+    
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
@@ -41,5 +41,16 @@
             RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                     RC(8,5) RC(8,4) RC(8,3) RC(8,2) RC(8,1) RC(8,0)
                             RC(0,6) RC(1,6) RC(2,6) RC(3,6) RC(4,6)     RC(9,5) RC(9,5) RC(9,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
         >;
+    };
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
     };
 };
