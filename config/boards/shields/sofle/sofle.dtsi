@@ -35,7 +35,7 @@
     };
     
     default_transform: keymap_transform0 {
-        compatible = "zmk,matrix-transform";
+        compatible = "zmk,matrix-transform,gpio-keys";
         columns = <7>;
         rows = <5>;
         map = <
