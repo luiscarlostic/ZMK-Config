@@ -9,7 +9,7 @@
     };
 
     kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
+        compatible = "zmk,kscan-gpio-matrix,gpio-keys";
         diode-direction = "col2row";
         wakeup-source;
 
